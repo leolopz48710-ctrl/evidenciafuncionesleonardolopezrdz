@@ -3,8 +3,9 @@ import math
 def mcd(a, b):
     a = abs(a)
     b = abs(b)
+    if a == 0 or b == 0:
+        return 0
     while b != 0:
-        return 0  # o manejo interno según plantilla
         a, b = b, a % b
     return a
 
@@ -21,4 +22,4 @@ print("Los resultados " + ("coinciden" if resultado == resultado_math else "No c
 if num1 == 0 and num2 == 0:
     print("Caso especial: ambos números son cero")
 else:
-    print("Programa terminado")
+    print("Programa " + "terminado")
